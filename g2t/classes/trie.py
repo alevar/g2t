@@ -10,7 +10,12 @@ class Trie:
         self.root = TrieNode()
 
     def insert(self, intervals, transcript_id):
-        print(intervals, transcript_id)
+        node = self.root
+        for interval in intervals:
+            if interval not in node.children:
+                node.children[interval] = TrieNode()
+            node = node.children[interval]
+            node.transcripts.add(transcript_id)
 
     def query(self, chain):
         node = self.root

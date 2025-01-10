@@ -43,8 +43,8 @@ class G2T:
         
     def build_interval_trie(self):
         trie = Trie()
-        for tx in self.transciptome:
-            trie.insert(tx.get_chain(), tx.get_tid())
+        for ob in self.transcriptome.bundle_it(): # iterate over overlap bundles
+            print(ob)
 
     def run(self):
         print("run")
