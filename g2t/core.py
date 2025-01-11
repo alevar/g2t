@@ -99,10 +99,6 @@ class G2T:
         Raises:
             AssertionError: If transcript lookup or coordinate conversion fails.
         """
-        
-        if input_record.query_name == "Env_Vpu.13_290_1":
-            print("Found read")
-        
         # Extract exons from the input record
         exons = extract_exons(input_record)
         if not exons:
@@ -121,11 +117,6 @@ class G2T:
             )
         except KeyError:
             return None
-        
-        # if input_record.query_name == "Env_Vpu.13_290_1":
-        #     return None
-        # else:
-        #     print("Found read")
             
         if not matching_ids:
             return None
