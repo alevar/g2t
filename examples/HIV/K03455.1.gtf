@@ -1,1 +1,234 @@
-/ccb/salz8-3/avaraby1/HIV_Atlas/HIV_Atlas_Creation/data/reference/K03455.1.gtf
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.1"; gene_id "Env_Vpu"; splicing "D1^A5"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.1"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5977	9635	.	+	.	transcript_id "Env_Vpu.1"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6062	6310	.	+	0	transcript_id "Env_Vpu.1"; gene_id "Env_Vpu"; product "vpu";
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.10"; gene_id "Env_Vpu"; splicing "D1^A2|D3^A4b"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.10"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.10"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5961	9635	.	+	.	transcript_id "Env_Vpu.10"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.10"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.11"; gene_id "Env_Vpu"; splicing "D1^A2|D3^A4a"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.11"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.11"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5955	9635	.	+	.	transcript_id "Env_Vpu.11"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.11"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.12"; gene_id "Env_Vpu"; splicing "D1^A2|D3^A4c"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.12"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.12"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5937	9635	.	+	.	transcript_id "Env_Vpu.12"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.12"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.13"; gene_id "Env_Vpu"; splicing "D1^A1|D2^A2|D3^A5"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.13"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Env_Vpu.13"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.13"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5977	9635	.	+	.	transcript_id "Env_Vpu.13"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.13"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.14"; gene_id "Env_Vpu"; splicing "D1^A1|D2^A2|D3^A4b"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.14"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Env_Vpu.14"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.14"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5961	9635	.	+	.	transcript_id "Env_Vpu.14"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.14"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.15"; gene_id "Env_Vpu"; splicing "D1^A1|D2^A2|D3^A4a"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.15"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Env_Vpu.15"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.15"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5955	9635	.	+	.	transcript_id "Env_Vpu.15"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.15"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.16"; gene_id "Env_Vpu"; splicing "D1^A1|D2^A2|D3^A4c"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.16"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Env_Vpu.16"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.16"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5937	9635	.	+	.	transcript_id "Env_Vpu.16"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.16"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.2"; gene_id "Env_Vpu"; splicing "D1^A4b"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.2"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5961	9635	.	+	.	transcript_id "Env_Vpu.2"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.2"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.3"; gene_id "Env_Vpu"; splicing "D1^A4a"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.3"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5955	9635	.	+	.	transcript_id "Env_Vpu.3"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.3"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.5"; gene_id "Env_Vpu"; splicing "D1^A1|D2^A5"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.5"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Env_Vpu.5"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5977	9635	.	+	.	transcript_id "Env_Vpu.5"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.5"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.6"; gene_id "Env_Vpu"; splicing "D1^A1|D2^A4b"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.6"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Env_Vpu.6"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5961	9635	.	+	.	transcript_id "Env_Vpu.6"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.6"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.7"; gene_id "Env_Vpu"; splicing "D1^A1|D2^A4a"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.7"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Env_Vpu.7"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5955	9635	.	+	.	transcript_id "Env_Vpu.7"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.7"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.8"; gene_id "Env_Vpu"; splicing "D1^A4c"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.8"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5937	9635	.	+	.	transcript_id "Env_Vpu.8"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.8"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Env_Vpu.9"; gene_id "Env_Vpu"; splicing "D1^A2|D3^A5"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Env_Vpu.9"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Env_Vpu.9"; gene_id "Env_Vpu";
+K03455.1	GenBank	exon	5977	9635	.	+	.	transcript_id "Env_Vpu.9"; gene_id "Env_Vpu";
+K03455.1	GenBank	CDS	6225	8795	.	+	0	transcript_id "Env_Vpu.9"; gene_id "Env_Vpu"; Protein_id "AAB50262.1"; product "env"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "GagPol.1"; gene_id "GagPol"
+K03455.1	GenBank	exon	455	9635	.	+	.	transcript_id "GagPol.1"; gene_id "GagPol";
+K03455.1	GenBank	CDS	790	2292	.	+	0	transcript_id "GagPol.1"; gene_id "GagPol"; Protein_id "AAB50258.1"; product "gag"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "GagPol.2"; gene_id "GagPol"
+K03455.1	GenBank	exon	455	9635	.	+	.	transcript_id "GagPol.2"; gene_id "GagPol";
+K03455.1	GenBank	CDS	2358	5096	.	+	0	transcript_id "GagPol.2"; gene_id "GagPol"; Protein_id "AAB50259.1"; product "pol"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Nef.1"; gene_id "Nef"; splicing "D1^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Nef.1"; gene_id "Nef";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Nef.1"; gene_id "Nef";
+K03455.1	GenBank	CDS	8797	9168	.	+	0	transcript_id "Nef.1"; gene_id "Nef"; Protein_id "AAB50263.1"; product "nef"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Nef.3"; gene_id "Nef"; splicing "D1^A1|D2^A5|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Nef.3"; gene_id "Nef";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Nef.3"; gene_id "Nef";
+K03455.1	GenBank	exon	5977	6045	.	+	.	transcript_id "Nef.3"; gene_id "Nef";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Nef.3"; gene_id "Nef";
+K03455.1	GenBank	CDS	8797	9168	.	+	0	transcript_id "Nef.3"; gene_id "Nef"; Protein_id "AAB50263.1"; product "nef"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Nef.4"; gene_id "Nef"; splicing "D1^A2|D3^A5|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Nef.4"; gene_id "Nef";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Nef.4"; gene_id "Nef";
+K03455.1	GenBank	exon	5977	6045	.	+	.	transcript_id "Nef.4"; gene_id "Nef";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Nef.4"; gene_id "Nef";
+K03455.1	GenBank	CDS	8797	9168	.	+	0	transcript_id "Nef.4"; gene_id "Nef"; Protein_id "AAB50263.1"; product "nef"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Nef.5"; gene_id "Nef"; splicing "D1^A1|D2^A2|D3^A5|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Nef.5"; gene_id "Nef";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Nef.5"; gene_id "Nef";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Nef.5"; gene_id "Nef";
+K03455.1	GenBank	exon	5977	6045	.	+	.	transcript_id "Nef.5"; gene_id "Nef";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Nef.5"; gene_id "Nef";
+K03455.1	GenBank	CDS	8797	9168	.	+	0	transcript_id "Nef.5"; gene_id "Nef"; Protein_id "AAB50263.1"; product "nef"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.1"; gene_id "Rev"; splicing "D1^A4b|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.1"; gene_id "Rev";
+K03455.1	GenBank	exon	5961	6045	.	+	.	transcript_id "Rev.1"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.1"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.1"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.1"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.10"; gene_id "Rev"; splicing "D1^A1|D2^A2|D3^A4b|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.10"; gene_id "Rev";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Rev.10"; gene_id "Rev";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Rev.10"; gene_id "Rev";
+K03455.1	GenBank	exon	5961	6045	.	+	.	transcript_id "Rev.10"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.10"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.10"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.10"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.11"; gene_id "Rev"; splicing "D1^A1|D2^A2|D3^A4a|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.11"; gene_id "Rev";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Rev.11"; gene_id "Rev";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Rev.11"; gene_id "Rev";
+K03455.1	GenBank	exon	5955	6045	.	+	.	transcript_id "Rev.11"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.11"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.11"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.11"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.12"; gene_id "Rev"; splicing "D1^A1|D2^A2|D3^A4c|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.12"; gene_id "Rev";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Rev.12"; gene_id "Rev";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Rev.12"; gene_id "Rev";
+K03455.1	GenBank	exon	5937	6045	.	+	.	transcript_id "Rev.12"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.12"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.12"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.12"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.2"; gene_id "Rev"; splicing "D1^A4a|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.2"; gene_id "Rev";
+K03455.1	GenBank	exon	5955	6045	.	+	.	transcript_id "Rev.2"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.2"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.2"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.2"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.4"; gene_id "Rev"; splicing "D1^A1|D2^A4b|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.4"; gene_id "Rev";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Rev.4"; gene_id "Rev";
+K03455.1	GenBank	exon	5961	6045	.	+	.	transcript_id "Rev.4"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.4"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.4"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.4"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.5"; gene_id "Rev"; splicing "D1^A1|D2^A4a|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.5"; gene_id "Rev";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Rev.5"; gene_id "Rev";
+K03455.1	GenBank	exon	5955	6045	.	+	.	transcript_id "Rev.5"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.5"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.5"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.5"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.6"; gene_id "Rev"; splicing "D1^A1|D2^A4c|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.6"; gene_id "Rev";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Rev.6"; gene_id "Rev";
+K03455.1	GenBank	exon	5937	6045	.	+	.	transcript_id "Rev.6"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.6"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.6"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.6"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.7"; gene_id "Rev"; splicing "D1^A2|D3^A4b|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.7"; gene_id "Rev";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Rev.7"; gene_id "Rev";
+K03455.1	GenBank	exon	5961	6045	.	+	.	transcript_id "Rev.7"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.7"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.7"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.7"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.8"; gene_id "Rev"; splicing "D1^A2|D3^A4a|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.8"; gene_id "Rev";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Rev.8"; gene_id "Rev";
+K03455.1	GenBank	exon	5955	6045	.	+	.	transcript_id "Rev.8"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.8"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.8"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.8"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Rev.9"; gene_id "Rev"; splicing "D1^A2|D3^A4c|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Rev.9"; gene_id "Rev";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Rev.9"; gene_id "Rev";
+K03455.1	GenBank	exon	5937	6045	.	+	.	transcript_id "Rev.9"; gene_id "Rev";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Rev.9"; gene_id "Rev";
+K03455.1	GenBank	CDS	5970	6045	.	+	0	transcript_id "Rev.9"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	CDS	8379	8653	.	+	2	transcript_id "Rev.9"; gene_id "Rev"; Protein_id "AAB50257.1"; product "rev"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Tat.1"; gene_id "Tat"; splicing "D1^A3|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Tat.1"; gene_id "Tat";
+K03455.1	GenBank	exon	5778	6045	.	+	.	transcript_id "Tat.1"; gene_id "Tat";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Tat.1"; gene_id "Tat";
+K03455.1	GenBank	CDS	5831	6045	.	+	0	transcript_id "Tat.1"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	CDS	8379	8424	.	+	1	transcript_id "Tat.1"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Tat.2"; gene_id "Tat"; splicing "D1^A1|D2^A3|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Tat.2"; gene_id "Tat";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Tat.2"; gene_id "Tat";
+K03455.1	GenBank	exon	5778	6045	.	+	.	transcript_id "Tat.2"; gene_id "Tat";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Tat.2"; gene_id "Tat";
+K03455.1	GenBank	CDS	5831	6045	.	+	0	transcript_id "Tat.2"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	CDS	8379	8424	.	+	1	transcript_id "Tat.2"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Tat.3"; gene_id "Tat"; splicing "D1^A2|D3^A3|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Tat.3"; gene_id "Tat";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Tat.3"; gene_id "Tat";
+K03455.1	GenBank	exon	5778	6045	.	+	.	transcript_id "Tat.3"; gene_id "Tat";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Tat.3"; gene_id "Tat";
+K03455.1	GenBank	CDS	5831	6045	.	+	0	transcript_id "Tat.3"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	CDS	8379	8424	.	+	1	transcript_id "Tat.3"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Tat.4"; gene_id "Tat"; splicing "D1^A1|D2^A2|D3^A3|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Tat.4"; gene_id "Tat";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Tat.4"; gene_id "Tat";
+K03455.1	GenBank	exon	5390	5463	.	+	.	transcript_id "Tat.4"; gene_id "Tat";
+K03455.1	GenBank	exon	5778	6045	.	+	.	transcript_id "Tat.4"; gene_id "Tat";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Tat.4"; gene_id "Tat";
+K03455.1	GenBank	CDS	5831	6045	.	+	0	transcript_id "Tat.4"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	CDS	8379	8424	.	+	1	transcript_id "Tat.4"; gene_id "Tat"; Protein_id "AAB50256.1"; product "tat"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Vif.2"; gene_id "Vif"; splicing "D1^A1"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Vif.2"; gene_id "Vif";
+K03455.1	GenBank	exon	4913	9635	.	+	.	transcript_id "Vif.2"; gene_id "Vif";
+K03455.1	GenBank	CDS	5041	5619	.	+	0	transcript_id "Vif.2"; gene_id "Vif"; Protein_id "AAB50260.1"; product "vif"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Vpr.1"; gene_id "Vpr"; splicing "D1^A2|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Vpr.1"; gene_id "Vpr";
+K03455.1	GenBank	exon	5390	6045	.	+	.	transcript_id "Vpr.1"; gene_id "Vpr";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Vpr.1"; gene_id "Vpr";
+K03455.1	GenBank	CDS	5559	5795	.	+	0	transcript_id "Vpr.1"; gene_id "Vpr"; Protein_id "AAB50261.1"; product "vpr"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Vpr.2"; gene_id "Vpr"; splicing "D1^A1|D2^A2|D4^A7"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Vpr.2"; gene_id "Vpr";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Vpr.2"; gene_id "Vpr";
+K03455.1	GenBank	exon	5390	6045	.	+	.	transcript_id "Vpr.2"; gene_id "Vpr";
+K03455.1	GenBank	exon	8379	9635	.	+	.	transcript_id "Vpr.2"; gene_id "Vpr";
+K03455.1	GenBank	CDS	5559	5795	.	+	0	transcript_id "Vpr.2"; gene_id "Vpr"; Protein_id "AAB50261.1"; product "vpr"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Vpr.3"; gene_id "Vpr"; splicing "D1^A2"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Vpr.3"; gene_id "Vpr";
+K03455.1	GenBank	exon	5390	9635	.	+	.	transcript_id "Vpr.3"; gene_id "Vpr";
+K03455.1	GenBank	CDS	5559	5795	.	+	0	transcript_id "Vpr.3"; gene_id "Vpr"; Protein_id "AAB50261.1"; product "vpr"
+K03455.1	GenBank	transcript	455	9635	.	+	.	transcript_id "Vpr.4"; gene_id "Vpr"; splicing "D1^A1|D2^A2"
+K03455.1	GenBank	exon	455	743	.	+	.	transcript_id "Vpr.4"; gene_id "Vpr";
+K03455.1	GenBank	exon	4913	4962	.	+	.	transcript_id "Vpr.4"; gene_id "Vpr";
+K03455.1	GenBank	exon	5390	9635	.	+	.	transcript_id "Vpr.4"; gene_id "Vpr";
+K03455.1	GenBank	CDS	5559	5795	.	+	0	transcript_id "Vpr.4"; gene_id "Vpr"; Protein_id "AAB50261.1"; product "vpr"

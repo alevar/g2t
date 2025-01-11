@@ -12,6 +12,7 @@
 import os
 import re
 import csv
+import pysam
 import subprocess
 import numpy as np
 from enum import Enum
@@ -709,7 +710,6 @@ def trans2genome(chain, strand, zero_pos):
     assert chain_pos >= 0, "unexpected chain_pos<0"
     return chain_pos
 
-
 def cut_chain(chain, start, end):
     res = []
     for cs, ce in chain:
@@ -951,3 +951,65 @@ def partition_chains(chains):
         res = _partition_chains(res, chain)
 
     return res
+
+def extract_exons(record: pysam.AlignedSegment) -> List[Tuple[int, int]]:
+    """
+    Extract exon coordinates from a BAM record using CIGAR string.
+    
+    Args:
+        record: pysam AlignedSegment object
+        
+    Returns:
+        List of tuples containing (start, end) coordinates for each exon
+    """
+    qname = record.query_name
+    pos = record.reference_start  # 0-based position
+    
+    # Initialize variables
+    exons: List[Tuple[int, int]] = []
+    exon_start: int = pos
+    exon_end: int = pos
+    aligned_bases = 0
+    read_length = 0
+    in_alignment = False
+    cigar_string = ""
+    
+    # Process CIGAR string
+    for operation, length in record.cigartuples:
+        if operation in [0, 7, 8]:  # Match, Equal, Diff
+            aligned_bases += length
+            read_length += length
+            exon_end += length
+            if not in_alignment:
+                in_alignment = True
+            cigar_string += f"{length}M"
+            
+        elif operation == 1:  # Insertion
+            read_length += length
+            cigar_string += f"{length}I"
+            
+        elif operation == 2:  # Deletion
+            exon_end += length
+            cigar_string += f"{length}D"
+            
+        elif operation == 3:  # RefSkip (N)
+            if (exon_end - exon_start) > 0:
+                # Convert to 1-based coordinates to match Rust code
+                exons.append((exon_start + 1, exon_end))
+            exon_start = exon_end + length
+            exon_end = exon_start
+            cigar_string += f"{length}N"
+            
+        elif operation in [4, 5]:  # Soft/Hard Clip
+            if in_alignment:
+                in_alignment = False
+            read_length += length
+            cigar_string += f"{length}S"
+            
+        else:
+            print(f"Unknown CIGAR operation in read {qname}")
+    
+    # Add the last exon
+    exons.append((exon_start + 1, exon_end))
+    
+    return exons

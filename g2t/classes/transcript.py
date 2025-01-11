@@ -1032,6 +1032,25 @@ class Transcript (Object):
             chain.append([o[2].get_start(), o[2].get_end()])
         return chain
     
+    def get_transcriptomic_position(self, genomic_pos: int) -> int:
+        """Convert a genomic position to a transcriptomic position.
+
+        Args:
+            genomic_pos (int): The genomic position.
+
+        Returns:
+            int: The transcriptomic position.
+
+        """
+        trans_pos = 0
+    
+        for exon in sorted(self.exons):
+            if exon[0] <= genomic_pos <= exon[1]:
+                return trans_pos + (genomic_pos - exon[0])
+            trans_pos += exon[1] - exon[0] + 1
+            
+        return None
+    
 class Exon(Object):
     """
     A class representing an exon.

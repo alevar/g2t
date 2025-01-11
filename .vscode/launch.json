@@ -5,7 +5,7 @@
             "name": "g2t debug",
             "type": "debugpy",
             "request": "launch",
-            "python": "/home/avaraby1/miniconda3/envs/G2T/bin/python",
+            "python": "/Users/sparrow/miniconda3/envs/G2T/bin/python",
             "module": "g2t",
             "console": "integratedTerminal",
             "args": [
