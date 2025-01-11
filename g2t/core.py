@@ -40,6 +40,10 @@ class G2T:
 # 
         self.graphs = dict()
         self.build_interval_graph()
+        
+        # bam reader memoization - these get updated to expedite the graph parsing
+        self.cur_bam_seqid = None
+        self.cur_node_idx = None
 
         # initiate output BAM file
         self.output_bam = None
@@ -72,7 +76,7 @@ class G2T:
             # extract chains of overlapping transcripts
             chains = []
             for tx in ob:
-                chain = [[x[0],x[1],[tx.get_tid()]] for x in tx.get_chain()]
+                chain = [[x[0],x[1]-1,[tx.get_tid()]] for x in tx.get_chain()] # -1 here to account for the inclusivity rules of the intervals in the transcriptome
                 chains.append(chain)
 
             # partition chains into disjoint sets
@@ -80,7 +84,88 @@ class G2T:
         
             # add partitioned chains to the trie
             self.graphs[ob.get_seqid()].add_from_chains(partitioned_chains)
-
+            
+    def convert_read(self, input_record):
+        """
+        Convert genomic coordinates of a single-end read to transcriptomic coordinates.
+        
+        Args:
+            input_record (pysam.AlignedSegment): Input BAM record to convert.
+            
+        Returns:
+            pysam.AlignedSegment: Converted read in transcriptomic coordinates,
+                or None if conversion is not possible.
+        
+        Raises:
+            AssertionError: If transcript lookup or coordinate conversion fails.
+        """
+        
+        if input_record.query_name == "Env_Vpu.13_290_1":
+             return None
+        
+        # Extract exons from the input record
+        exons = extract_exons(input_record)
+        if not exons:
+            return None
+            
+        # Update sequence ID tracking if needed
+        if input_record.reference_name != self.cur_bam_seqid:
+            self.cur_bam_seqid = input_record.reference_name
+            self.cur_node_idx = 0
+            
+        # Find matching transcripts in the graph
+        try:
+            matching_ids, self.cur_node_idx = self.graphs[input_record.reference_name].find_chain_path(
+                exons,
+                self.cur_node_idx
+            )
+        except KeyError:
+            return None
+        
+        # if input_record.query_name == "Env_Vpu.13_290_1":
+        #     return None
+        # else:
+        #     print("Found read")
+            
+        if not matching_ids:
+            return None
+            
+        # Process each matching transcript
+        records = []
+        for tid in matching_ids:
+            try:
+                # Get transcript and compute coordinates
+                tx = self.transcriptome.get_by_tid(tid)
+                if tx is None:
+                    continue
+                    
+                transcriptomic_start = tx.get_transcriptomic_position(exons[0][0])
+                transcriptomic_end = tx.get_transcriptomic_position(exons[-1][1])
+                
+                if transcriptomic_start is None or transcriptomic_end is None:
+                    continue
+                    
+                # Create new read with transcriptomic coordinates
+                record = pysam.AlignedSegment()
+                record.query_name = input_record.query_name
+                record.query_sequence = input_record.query_sequence
+                record.flag = 0
+                record.reference_id = self.output_bam_header_map[tid]
+                record.reference_start = transcriptomic_start
+                record.mapping_quality = 255
+                
+                # Calculate CIGAR length
+                # For a read spanning positions x to y, length should be y - x + 1
+                record.cigar = [(0, transcriptomic_end - transcriptomic_start + 1)]
+                record.query_qualities = None
+                
+                records.append(record)
+                
+            except (KeyError, IndexError) as e:
+                continue
+                
+        return records
+            
     def run(self):
         with pysam.AlignmentFile(self.alignment, "rb") as bam:
             try:
@@ -88,39 +173,11 @@ class G2T:
                     if record.is_unmapped:
                         continue
                         
-                    exons = extract_exons(record)
-                    if not exons:
+                    converted_reads = self.convert_read(record)
+                    if converted_reads is None:
                         continue
-                    
-                    # find matching transcripts in the graph
-                    matching_ids = self.graphs[record.reference_name].find_chain_path(exons)
-                    if not matching_ids:
-                        continue
-
-                    # compute transcriptomic coordinates of the read for each of the matching transcripts
-                    for tid in matching_ids:
-                        tx = self.transcriptome.get_by_tid(tid)
-                        assert tx is not None, f"Transcript {tid} not found in the transcriptome."
-                        transcriptomic_start = tx.get_transcriptomic_position(exons[0][0])
-                        transcriptomic_end = tx.get_transcriptomic_position(exons[-1][1])
-                        assert transcriptomic_start is not None, f"Transcriptomic start position for {tid} not found."
-                        assert transcriptomic_end is not None, f"Transcriptomic end position for {tid} not found."
-
-                        # create a new read with the transcriptomic coordinates
-                        record = pysam.AlignedSegment()
-                        record.query_name = f"{record.query_name}"
-                        record.query_sequence = record.query_sequence
-                        record.flag = 0
-                        record.reference_id = self.output_bam_header_map[tid]
-                        record.reference_start = transcriptomic_start
-                        record.mapping_quality = 255
-                        record.cigar = [(0, transcriptomic_end - transcriptomic_start)]
-                        record.next_reference_id = self.output_bam_header_map[tid]
-                        record.next_reference_start = transcriptomic_start
-                        record.template_length = 0
-                        record.query_qualities = None
-
-                        self.output_bam.write(record)
+                    for read in converted_reads:
+                        self.output_bam.write(read)
 
             except Exception as e:
                 print(f"Error processing BAM file: {e}")

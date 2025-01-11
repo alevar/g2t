@@ -27,10 +27,11 @@ class Graph:
                     self.add_edge(id_map[id], node_id)
                 id_map[id] = node_id
 
-    def find_chain_path(self, target_chain):
+    def find_chain_path(self, target_chain, start_node_idx=0):
         """
         Check if target chain exists as a path in the graph by consuming pieces of the target.
-        Returns intersection of IDs collected along the valid path.
+        Can start at a specific node index to avoid redundant searches.
+        Returns intersection of IDs collected along the valid path and the index of the first matching node.
         """
         if not target_chain or not self.nodes:
             return set()
@@ -93,14 +94,18 @@ class Graph:
                     
             return None
 
-        # Convert target chain to list of tuples for easier manipulation
-        target = [(interval[0], interval[1]) for interval in target_chain]
+        # # Convert target chain to list of tuples for easier manipulation
+        # target = [(interval[0], interval[1]) for interval in target_chain]
         
         # Try starting from each possible node
-        for start_idx, node in enumerate(self.nodes):
-            if node[1] >= target[0][0]:  # Node can cover start of target
-                result = find_path_from_node(start_idx, target, None)
+        first_start_node_idx = None
+        for start_idx, node in enumerate(self.nodes[start_node_idx:]):
+            if node[1] >= target_chain[0][0]:  # Node can cover start of target
+                first_start_node_idx = start_idx if first_start_node_idx is None else first_start_node_idx # store the first node that can cover the target
+                result = find_path_from_node(start_idx, target_chain, None)
                 if result is not None:
-                    return result
+                    return result, first_start_node_idx
+            if node[0] > target_chain[0][1]: # can safely terminate search if we've passed the target
+                break
 
-        return set()
+        return set(), first_start_node_idx

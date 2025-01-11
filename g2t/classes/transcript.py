@@ -1034,21 +1034,20 @@ class Transcript (Object):
     
     def get_transcriptomic_position(self, genomic_pos: int) -> int:
         """Convert a genomic position to a transcriptomic position.
-
+        
         Args:
-            genomic_pos (int): The genomic position.
-
+            genomic_pos (int): The genomic position (0-based).
+            
         Returns:
-            int: The transcriptomic position.
-
+            int: The transcriptomic position (0-based), or None if the position 
+                is not within any exon.
         """
         trans_pos = 0
-    
         for exon in sorted(self.exons):
             if exon[0] <= genomic_pos <= exon[1]:
                 return trans_pos + (genomic_pos - exon[0])
-            trans_pos += exon[1] - exon[0] + 1
-            
+            # We want contiguous positions in transcript space
+            trans_pos += exon[1] - exon[0]
         return None
     
 class Exon(Object):

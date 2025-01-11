@@ -49,7 +49,7 @@ class Test_Graph(unittest.TestCase):
         ]
         self.graph.add_from_chains(chains)
         target = [(1, 5)]
-        self.assertEqual(self.graph.find_chain_path(target), {1, 2})
+        self.assertEqual(self.graph.find_chain_path(target)[0], {1, 2})
 
     def test_split_interval(self):
         """Test finding a path that requires combining multiple intervals"""
@@ -60,7 +60,7 @@ class Test_Graph(unittest.TestCase):
         ]
         self.graph.add_from_chains(chains)
         target = [(1, 6)]
-        self.assertEqual(self.graph.find_chain_path(target), {1, 2})
+        self.assertEqual(self.graph.find_chain_path(target)[0], {1, 2})
 
     def test_overlapping_intervals(self):
         """Test handling overlapping intervals in the graph"""
@@ -71,7 +71,7 @@ class Test_Graph(unittest.TestCase):
         ]
         self.graph.add_from_chains(chains)
         target = [(1, 6)]
-        self.assertEqual(self.graph.find_chain_path(target), {2})
+        self.assertEqual(self.graph.find_chain_path(target)[0], {2})
 
     def test_id_intersection(self):
         """Test proper ID set intersection along the path"""
@@ -82,7 +82,7 @@ class Test_Graph(unittest.TestCase):
         ]
         self.graph.add_from_chains(chains)
         target = [(1, 6)]
-        self.assertEqual(self.graph.find_chain_path(target), {2, 3})
+        self.assertEqual(self.graph.find_chain_path(target)[0], {2, 3})
 
     def test_no_valid_path(self):
         """Test when no valid path exists"""
@@ -92,8 +92,8 @@ class Test_Graph(unittest.TestCase):
             (8, 10, {2, 3})
         ]
         self.graph.add_from_chains(chains)
-        target = [(1, 7, {1, 2})]
-        self.assertEqual(self.graph.find_chain_path(target), set())
+        target = [(1, 7)]
+        self.assertEqual(self.graph.find_chain_path(target)[0], set())
 
 if __name__ == "__main__":
     unittest.main()
