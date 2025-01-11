@@ -101,7 +101,7 @@ class G2T:
         """
         
         if input_record.query_name == "Env_Vpu.13_290_1":
-             return None
+            print("Found read")
         
         # Extract exons from the input record
         exons = extract_exons(input_record)

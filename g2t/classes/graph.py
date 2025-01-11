@@ -99,7 +99,7 @@ class Graph:
         
         # Try starting from each possible node
         first_start_node_idx = None
-        for start_idx, node in enumerate(self.nodes[start_node_idx:]):
+        for start_idx, node in enumerate(self.nodes[start_node_idx:], start_node_idx):
             if node[1] >= target_chain[0][0]:  # Node can cover start of target
                 first_start_node_idx = start_idx if first_start_node_idx is None else first_start_node_idx # store the first node that can cover the target
                 result = find_path_from_node(start_idx, target_chain, None)
