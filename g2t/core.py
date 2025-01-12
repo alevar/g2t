@@ -2,6 +2,7 @@ import os
 import re
 import copy
 import shutil
+import random
 import argparse
 import subprocess
 
@@ -123,6 +124,11 @@ class G2T:
             
         # Process each matching transcript
         records = []
+        
+        matching_ids = list(matching_ids)
+        random.shuffle(matching_ids)
+        primary_id = matching_ids[0]
+
         for tid in matching_ids:
             try:
                 # Get transcript and compute coordinates
@@ -140,7 +146,7 @@ class G2T:
                 record = pysam.AlignedSegment()
                 record.query_name = input_record.query_name
                 record.query_sequence = input_record.query_sequence
-                record.flag = 0
+                record.flag = 0 if tid == primary_id else 256
                 record.reference_id = self.output_bam_header_map[tid]
                 record.reference_start = transcriptomic_start
                 record.mapping_quality = 255
